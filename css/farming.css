@@ -1,6 +1,5 @@
 .farming__body{
   background-image: url('../img/bg/farming-bg.png');
-  
   background-position: 0 -110px;
 }
 .info{
@@ -23,12 +22,13 @@
 }
 .bonuses__text{
   margin-bottom: 2px;
+  font-size: 13px;
 }
 .bonuses__amount{
   display: flex;
   gap: 4px;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 .amount-friends{
   margin-bottom: 8px;
@@ -49,6 +49,7 @@
 }
 .bonuses__status-text{
   color: var(--gray-01);
+  font-size: 12px;
 }
 .bonuses__status-text--green{
   color: var(--main-green-01);
@@ -60,13 +61,13 @@
 }
 .balance__amount{
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 9px;
   margin-bottom: 8px;
 }
 .balance__icon{
   position: absolute;
-  left: 60px;
+  left: 70px;
   top: -20px;
 }
 
@@ -76,13 +77,14 @@
   font-style: normal;
 }
 .farm-balance__text{
-  font-size: 9px;
+  font-size: 11px;
   color: var(--white-01);
   opacity: 0.6;
   margin-bottom: 2px;
 }
 .farm-balance__income{
   color: var(--main-orange-01);
+  font-size: 12px;
 }
 
 .flag-balance__front{
@@ -135,6 +137,7 @@
   font-weight: 500;
   font-style: normal;
   transform: skew(8deg);
+  font-size: 13px;
 }
 .flag-farm__back{
   position: absolute;
@@ -187,7 +190,7 @@
 }
 .timer{
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   padding-top: 8px;
   margin-bottom: 8px;
 }
@@ -300,7 +303,7 @@
 .popup-farming__btn{
   background-color: var(--black-01);
   color: var(--white-01);
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
   top: -12px;
 }
@@ -310,12 +313,12 @@
   margin-left: 10px;
 }
 .popup-farming__text{
-  font-size: 10px;
+  font-size: 12px;
   opacity: 0.89;
   margin-bottom: 16px;
 }
 .popup-farming__subtext{
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
 }
 .popup-flag__back{

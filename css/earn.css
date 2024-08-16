@@ -15,7 +15,7 @@
   margin-bottom: 2px;
 }
 .earn__title {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
   transform: skew(4deg);
@@ -65,9 +65,9 @@
   opacity: 0.89;
   margin-bottom: 3px;
 }
-.task__income, .task__title--meow {
-  font-size: 10px;
-}
+/* .task__income, .task__title--meow {
+  font-size: 14px;
+} */
 .task__income--special {
   color: var(--main-purple-01);
 }
@@ -87,6 +87,7 @@
   color: var(--black-01);
   transform: skew(-8deg);
   padding: 5px 21px;
+  font-size: 16px;
 }
 .task__button--special {
   background-color: var(--main-purple-01);
@@ -187,7 +188,7 @@
 .popup-earn__btn {
   background-color: var(--black-01);
   color: var(--white-01);
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 4px;
 }
 .popup-earn__btn--today {
@@ -203,18 +204,18 @@
   color: var(--black-01);
 }
 .popup-earn__title {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px 0;
   transform: skew(4deg);
 }
 .popup-earn__text {
-  font-size: 10px;
+  font-size: 11px;
   margin-bottom: 8px;
   transform: skew(4deg);
 }
 .popup-earn__income {
   opacity: 0.89;
-  font-size: 10px;
+  /* font-size: 12px; */
   transform: skew(4deg);
 }
 .popup-earn__income--today {
