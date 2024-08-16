@@ -1,0 +1,121 @@
+.header--airdrop{
+  padding: 20px 24px;
+}
+.prev-btn{
+  padding: 0;
+}
+.header__text{
+  font-size: 20px;
+}
+.close-btn{
+  transform: rotate(-5deg);
+  padding: 0;
+}
+.body__airdrop{
+  background-image: url(../img/bg/airdrop-bg.jpg);
+  background-size: cover;
+  background-position: 100% 10%;
+  background-repeat: no-repeat;
+}
+.airdrop__buttons{
+  transform: skew(-8deg);
+  margin-left: 10px;
+}
+.section__btn-nft--active{
+  background-color: var(--main-orange-01);
+  color: var(--black-01);
+}
+.section__btn-token--active{
+  background-color: var(--main-purple-01);
+  color: var(--black-01);
+}
+.nft{
+  margin-top: 40px;
+  text-align: center;
+}
+.token{
+  margin-top: 20px;
+  text-align: center;
+}
+.nft__img{
+  margin-bottom: 8px;
+}
+.nft__title{
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.token__title{
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-shadow: -2px 3px 6px #FF2DC8;
+}
+.nft__text, .token__text{
+  opacity: 0.7;
+  max-width: 328px;
+  font-size: 10px;
+  margin: 0 auto 16px;
+}
+.instruction-nft, .instruction-token{
+  padding: 16px;
+  width: 100%;
+  margin-bottom: 156px;
+}
+.instruction-nft{
+  background-color: var(--black-01);
+  border: 2px solid var(--main-orange-01);
+}
+.instruction-token{
+  background-color: var(--black-02);
+  border: 2px solid var(--main-purple-01);
+  border-radius: 12px;
+}
+.instruction-nft__title, .instruction-token__title{
+  margin-bottom: 16px;
+  text-shadow: 0 0 24px #7b6df3;
+  font-size: 14px;
+}
+.instruction-nft__list, .instruction-token__list{
+  text-align: left;
+  font-size: 10px;
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+.instruction-nft__item{
+  margin-bottom: 8px;
+}
+.instruction-token__item{
+  margin-bottom: 4px;
+}
+.instruction-nft__text{
+  font-size: 8px;
+  color: var(--main-orange-01);
+}
+.instruction-token__text{
+  font-size: 8px;
+  text-align: right;
+  color: var(--main-green-01);
+  width: 168px;
+}
+.text-right{
+  display: flex;
+  justify-content: end;
+}
+.airdrop-main__btn {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+  max-width: 355px;
+  color: var(--black-01);
+  background-color: var(--main-green-01);
+  box-shadow: 0 -16px 44px 0 rgba(49, 239, 49, 0.2);
+}
+.airdrop-btn__icon{
+  width: 24px;
+  height: 24px;
+  filter: invert(1) brightness(0);
+}
+.fixed-btn--airdrop{
+  bottom: 60px;
+}
+

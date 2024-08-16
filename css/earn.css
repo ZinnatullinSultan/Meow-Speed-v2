@@ -1,0 +1,235 @@
+.earn {
+  transform: skew(-4deg);
+  margin-bottom: 37px;
+}
+.earn__main {
+  max-width: 349px;
+  height: 248px;
+  background-image: url(../img/bg/earn-bg.png);
+  border: 2px solid var(--white-01);
+  margin-left: 7px;
+  padding: 16px 32px;
+  margin-bottom: 2px;
+}
+.earn__title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  transform: skew(4deg);
+}
+.earn__img {
+  margin: 0 auto;
+  display: block;
+  width: 234px;
+  transform: skew(4deg);
+}
+.special {
+  margin-bottom: 45px;
+}
+.tasks-daily,
+.tasks-speed {
+  margin-bottom: 16px;
+}
+
+.task {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.task--special {
+  background-image: url(../img/bg/special-task-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.task--today {
+  background-color: var(--black-03);
+}
+.task--meow {
+  background-color: var(--black-03);
+}
+.task__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.task__title {
+  opacity: 0.89;
+  margin-bottom: 3px;
+}
+.task__income, .task__title--meow {
+  font-size: 10px;
+}
+.task__income--special {
+  color: var(--main-purple-01);
+}
+.task__income--today {
+  color: var(--main-orange-01);
+}
+.task__income--meow {
+  color: var(--main-green-01);
+}
+.task__icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 4px;
+}
+.task__button {
+  border: 2px solid var(--white-01);
+  color: var(--black-01);
+  transform: skew(-8deg);
+  padding: 5px 21px;
+}
+.task__button--special {
+  background-color: var(--main-purple-01);
+}
+.task__button--today {
+  background-color: var(--main-orange-01);
+}
+.task__button--disabled {
+  background-color: transparent;
+  color: var(--white-20p);
+  border-color: var(--white-20p);
+}
+.task__button--meow {
+  background-color: var(--main-green-01);
+}
+.flag-earn__back {
+  position: absolute;
+  z-index: -1;
+  top: -12px;
+  left: -7px;
+}
+.flag-earn__front {
+  position: absolute;
+  top: -40px;
+  left: -12px;
+}
+.earn__timer {
+  position: absolute;
+  top: -44px;
+  left: 50px;
+  z-index: 2;
+  background-image: url(../img/flags/flag-timer.svg);
+  width: 140px;
+  height: 90px;
+  background-repeat: no-repeat;
+  padding-left: 48px;
+  padding-top: 27px;
+}
+.timer__value {
+  transform: rotate(-4deg);
+}
+
+.popup-earn--active .popup__overlay {
+  opacity: 1;
+  z-index: 2;
+}
+
+.popup-earn__card {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -500px;
+  /* bottom: 30px; */
+  padding: 0 12px;
+  z-index: 2;
+  transition: bottom 0.5s linear;
+}
+.popup-earn--active .popup-earn__card {
+  animation: popup-earn-card 0.8s linear;
+}
+@keyframes popup-earn-card {
+  0% {
+    bottom: -500px;
+  }
+  60% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+.popup-earn--active .popup-earn__card {
+  bottom: 30px;
+}
+.popup-earn__body {
+  border: 2px solid var(--white-01);
+  background-color: var(--black-01);
+  max-width: 350px;
+  height: 268px;
+  padding: 55px 32px;
+  position: relative;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+.popup-earn__body--special {
+  background-image: url(../img/bg/start-bonus-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popup-earn__wrapper {
+  transform: skew(-4deg);
+}
+.popup-earn__img {
+  transform: skew(4deg);
+}
+.popup-earn__btn {
+  background-color: var(--black-01);
+  color: var(--white-01);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.popup-earn__btn--today {
+  background-color: var(--main-orange-01);
+  color: var(--black-01);
+}
+.popup-earn__btn--special {
+  background-color: var(--main-purple-01);
+  color: var(--black-01);
+}
+.popup-earn__btn--meow {
+  background-color: var(--main-green-01);
+  color: var(--black-01);
+}
+.popup-earn__title {
+  font-size: 18px;
+  margin: 8px 0;
+  transform: skew(4deg);
+}
+.popup-earn__text {
+  font-size: 10px;
+  margin-bottom: 8px;
+  transform: skew(4deg);
+}
+.popup-earn__income {
+  opacity: 0.89;
+  font-size: 10px;
+  transform: skew(4deg);
+}
+.popup-earn__income--today {
+  color: var(--main-orange-01);
+}
+.popup-earn__income--special {
+  color: var(--main-purple-01);
+}
+.popup-earn__income--meow {
+  color: var(--main-green-01);
+}
+.popup-earn-flag__back {
+  position: absolute;
+  z-index: -1;
+  left: -17px;
+  top: -8px;
+}
+.popup-earn-flag__front {
+  position: absolute;
+  top: -36px;
+  left: -22px;
+  z-index: 2;
+}

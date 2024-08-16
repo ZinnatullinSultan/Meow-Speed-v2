@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FARMING</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Fugaz+One&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/farming.css">
+</head>
+<body class="farming__body">
+  <header class="header">
+    <div class="header__user user">
+      <img src="img/icons/avatar.svg" alt="" class="user__img">
+      <p class="user__name">Duck228</p>
+    </div>
+    <div class="header__buttons">
+      <button class="header__wallet"><img src="img/icons/wallet.svg" alt=""></button>
+      <button class="header__info"><img src="img/icons/help.svg" alt=""></button>
+      <button class="header__lang">
+        <div class="current-lang">
+          <span class="lang__choice lang__choice--ru">Ru</span>
+          <span class="lang__choice lang__choice--en">En</span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="info">
+      <div class="info__bonuses bonuses">
+        <img class="flag__back" src="img/flags/flag-back.svg" alt="">
+        <img class="flag__front" src="img/flags/flag-bonuses-front.svg" alt="">
+        <p class="bonuses__text">Referrer bonus</p>
+        <div class="bonuses__amount amount-friends">
+          <p class="amount-friends__num">8</p>
+          <img class="amount-friends__icon" src="img/icons/cat.svg" alt="">
+        </div>
+        <div class="bonuses__status">
+          <p class="bonuses__status-text"><span class="bonuses__status-text--green">NFT</span> - inactive</p>
+          <div class="bonuses__amount amount-tickets">
+            <p class="amount-tickets__num">12</p>
+            <img class="amount-tickets__icon" src="img/icons/ticket.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="balance">
+        <img class="flag__back" src="img/flags/flag-back.svg" alt="">
+        <img class="flag-balance__front" src="img/flags/flag-balance.svg" alt="">
+        <div class="balance__amount">
+          <p class="balance__num">3.323.318</p>
+          <img class="balance__icon" src="img/icons/cat-coin.svg" alt="">
+        </div>
+        <div class="balance__farm farm-balance">
+          <p class="farm-balance__text">Total farm income:</p>
+          <p class="farm-balance__income">+$100 MWSP/hour</p>
+        </div>
+      </div>
+    </section>
+    <section class="farm-card">
+      <div class="farm-card__left"><img class="farm-card__img" src="img/farm-card.png" alt=""></div>
+      <div class="farm-card__right">
+        <div class="farm-card__wrapper">
+          <div class="farm-card__info">
+            <img class="flag-farm__back" src="img/flags/flag-farm-back.svg" alt="">
+            <img class="flag-farm__front" src="img/flags/flag-farm-front.svg" alt="">
+            <p class="farm-card__name">Tester Kitten</p>
+            <p class="farm-card__lvl">Lvl 1</p>
+            <p class="farm-card__income">+$100 MWSP/hour</p>
+          </div>
+          <div class="farm-card__buttons">
+            <button class="farm-card__button farm-card__button--repair"><img class="farm-card__icon" src="img/icons/repair.svg" alt=""><span class="bt__text">Repair</span></button>
+            <button class="farm-card__button farm-card__button--food">Food<img class="farm-card__icon" src="img/icons/apple.svg" alt=""></button>
+          </div>
+        </div>
+        <button class="farm-card__btn--medium">Update</button>
+      </div>
+    </section>
+    <div class="fixed-btn">
+      <div class="timer">00:00:72</div>
+      <button class="button--main farming__btn">Claim</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">
+            <img src="img/icons/game.svg" alt="" class="menu__icon">
+            Game
+          </a>
+        </li>
+        <li class="menu__item menu__item--active"><a href="#" class="menu__link"><img src="img/icons/coin.svg" alt="" class="menu__icon">Farming</a></li>
+        <li class="menu__item"><a href="earn.html" class="menu__link"><img src="img/icons/transport.svg" alt="" class="menu__icon">Earn</a></li>
+        <li class="menu__item"><a href="friends.html" class="menu__link"><img src="img/icons/cat.svg" alt="" class="menu__icon">Friends</a></li>
+        <li class="menu__item"><a href="airdrop.html" class="menu__link"><img src="img/icons/airdrop-purple.svg" alt="" class="menu__icon menu__icon--airdrop menu__icon--purple"><span class="menu__item--purple">Airdrop</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <div class="popup-farming ">
+    <div class="popup__overlay"></div>
+    <img class="popup-farming__img popup-farming__img--first" src="img/tape.svg" alt="">
+    <img class="popup-farming__img popup-farming__img--second" src="img/tape-bottom.svg" alt="">
+    <div class="popup-farming__card">
+      <div class="popup-farming__body">
+        <img class="popup-flag__back" src="img/flags/flag-back.svg" alt="">
+        <img class="popup-flag__front" src="img/flags/flag-balance.svg" alt="">
+        <h2 class="popup-farming__title">New feature coming soon</h2>
+        <p class="popup-farming__text">If you see this window, it means that this feature will appear in the game very soon. Follow the news and keep your tail ready - there is a lot of interesting things ahead</p>
+        <p class="popup-farming__subtext">Stay tuned and get ready</p>
+      </div>
+      <button class="popup-farming__btn button--main">Okey</button>
+    </div>
+  </div>
+  <script src="js/header.js"></script>
+  <script src="js/farming.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRIENDS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=Fugaz+One&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/friends.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__user user">
+        <img src="img/icons/avatar.svg" alt="" class="user__img" />
+        <p class="user__name">Duck228</p>
+      </div>
+      <div class="header__buttons">
+        <button class="header__wallet">
+          <img src="img/icons/wallet.svg" alt="" />
+        </button>
+        <button class="header__info"><img src="img/icons/help.svg" alt="" /></button>
+        <button class="header__lang">
+          <div class="current-lang">
+            <span class="lang__choice lang__choice--ru">Ru</span>
+            <span class="lang__choice lang__choice--en">En</span>
+          </div>
+        </button>
+      </div>
+    </header>
+
+    <main class="main__friends">
+      <div class="section__buttons friends__buttons">
+        <button
+          class="section__btn section__btn--active section-friends__btn--invite">
+          Invite
+        </button>
+        <button class="section__btn section-friends__btn--leaderboard">
+          Leaderboard
+        </button>
+      </div>
+      <section class="invite">
+        <section class="invite__ref ref">
+          <img class="flag-invite__back" src="img/flags/flag-friends-back.svg" alt="">
+          <img class="flag-invite__front" src="img/flags/flag-friends-front.svg" alt=""> 
+          <h2 class="ref__title">Invite a friend!</h2>
+          <p class="ref__text">More kittens - more income!</p>
+          <div class="ref__cards">
+            <div class="ref__card start-bonus">
+              <h3 class="start-bonus__title">Starting bonus</h3>
+              <div class="start-bonus__bonuses">
+                <div class="start-bonus__bonus">
+                  <p class="start-bonus__amount">+3000 </p>
+                  <img class="start-bonus__icon" src="img/icons/cat.svg" alt="">
+                </div>
+                <div class="start-bonus__bonus">
+                  <p class="start-bonus__amount">+1 </p>
+                  <img class="start-bonus__icon start-bonus__icon--ticket" src="img/icons/ticket.svg" alt="">
+                </div>
+              </div>
+              <p class="start-bonus__text">for you and your friend immediately after registration</p>
+            </div>
+            <div class="ref__card invite-bonus">
+              <h3 class="invite-bonus__title">Bonuses for invitation</h3>
+              <p class="invite-bonus__text">Referral fees</p>
+              <p class="invite-bonus__income">5% of your friends' income 
+                + 1% of their referrals</p>
+            </div>
+          </div>
+        </section>
+        <div class="invite__link">
+          <div class="input"><input class="invite__input" type="text" value="https://meowspeed.com...846e32" readonly></div>
+          <button class="invite__copy">Copy</button>
+        </div>
+        <section class="friends">
+          <h2 class="friends__title">My friends: <span class="friends__count">0</span></h2>
+          <ul class="friends__users">
+            <li class="friend__user">
+              <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+              <p class="friend__name">matvei</p>
+            </li>
+            <li class="friend__user">
+              <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+              <p class="friend__name">stepan</p>
+            </li>
+            <li class="friend__user">
+              <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+              <p class="friend__name">lexa</p>
+            </li>
+          </ul>
+        </section>
+        <div class="fixed-btn"><button class="button--main friends-main__btn">Invite friends</button></div>
+      </section>
+      <section class="leader">
+        <div class="friends__wrapper">
+          <div class="leader__img">
+            <img class="leader-flag__back" src="img/flags/flag-back-green.svg" alt="" />
+            <img class="leader-flag__front" src="img/flags/leader-flag-front.svg" alt="" />
+          </div>
+        </div>
+        <section class="leaderboard">
+          <div class="leaderboard__title">
+            <h2>Leaderboard</h2>
+            <img src="img/icons/help.svg" alt="">
+          </div>
+          <ol class="friends__users">
+            <li class="friend__leader ">
+              <div class="friend__left">
+                <span class="friends__position friends__position--first">1</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+                  <p class="friend__name friend__name--first">@matvei</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">1232</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+            <li class="friend__leader">
+              <div class="friend__left">
+                <span class="friends__position friends__position--second">2</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+                  <p class="friend__name friend__name--second">@NeIvan</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">1201</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+            <li class="friend__leader">
+              <div class="friend__left">
+                <span class="friends__position friends__position--third">3</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+                  <p class="friend__name friend__name--third">@PochtiIvan</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">982</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+
+            <li class="friend__leader friend__leader--you">
+              <div class="friend__left">
+                <span class="friends__position friends__position--you">981</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/avatar.svg" alt="" class="friend__icon friend__icon--you">
+                  <p class="friend__name friend__name--you">You</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">2</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+
+            <li class="friend__leader">
+              <div class="friend__left">
+                <span class="friends__position">4</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+                  <p class="friend__name">@NeIvanNaverhu</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">874</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+            <li class="friend__leader">
+              <div class="friend__left">
+                <span class="friends__position">5</span>
+                <div class="friend__user-info">
+                  <img src="img/icons/user-avatar.png" alt="" class="friend__icon">
+                  <p class="friend__name">@IvanTutNet</p>
+                </div>
+              </div>
+              <div class="friend__right">
+                <p class="friend__score">866</p>
+                <img src="img/icons/cat.svg" alt="" class="friend__icon">
+              </div>
+            </li>
+          </ol>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link">
+              <img src="img/icons/game.svg" alt="" class="menu__icon" />
+              Game
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="farming.html" class="menu__link"
+              ><img src="img/icons/coin.svg" alt="" class="menu__icon" />Farming</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="earn.html" class="menu__link"
+              ><img src="img/icons/transport.svg" alt="" class="menu__icon" />Earn</a
+            >
+          </li>
+          <li class="menu__item menu__item--active">
+            <a href="#" class="menu__link"
+              ><img src="img/icons/cat.svg" alt="" class="menu__icon" />Friends</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="airdrop.html" class="menu__link"
+              ><img
+                src="img/icons/airdrop.svg"
+                alt=""
+                class="menu__icon menu__icon--airdrop" />Airdrop</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <div class="popup-friends">
+      <div class="popup__overlay"></div>
+      <div class="popup-friends__card">
+        <div class="popup-friends__wrapper">
+          <div class="popup-friends__body">
+            <button class="popup__close"><img class="popup__close-img" src="img/icons/close.svg" alt=""></button>
+            <img class="popup__close-back" src="img/icons/close-back.svg" alt="">
+            <h2 class="popup-friends__title">Your gift boxes for invitations</h2>
+            <div class="gift-boxes">
+              <p class="gift-boxes__count">0</p>
+              <img class="gift-boxes__icon" src="img/icons/gift.svg" alt="">
+            </div>
+            <p class="popup-friends__text">
+              Open the box and get <span class="popup-friends__text--green">$TON</span> coin or <span class="popup-friends__text--orange">$MWSP</span> tokens
+            </p>
+          </div>
+        </div>
+        <button class="popup-friends__btn button--main">Open</button>
+      </div>
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/friends.js"></script>
+  </body>
+</html>

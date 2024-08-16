@@ -1,0 +1,323 @@
+.main__friends {
+  margin-bottom: 97px;
+  overflow-x: hidden;
+}
+.friends__buttons {
+  transform: skew(-8deg);
+  margin-left: 10px;
+  padding: 0 12px;
+}
+.invite {
+  padding: 0 12px 65px;
+}
+.ref {
+  min-height: 253px;
+  background-image: url(../img/bg/ref-bg.jpg);
+  background-repeat: no-repeat;
+  padding: 16px 6px 0;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.ref__title {
+  font-size: 20px;
+  margin-bottom: 4px;
+  margin-top: 74px;
+  margin-left: 10px;
+}
+.ref__text {
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+
+.ref__card {
+  max-width: 172px;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  transform: skew(-4deg);
+  padding: 15px 10px 15px 14px;
+}
+.start-bonus {
+  background-image: url(../img/bg/start-bonus-bg.svg);
+  background-size: cover;
+}
+.invite-bonus {
+  background-color: var(--black-03);
+  padding: 16px 10px 15px 10px;
+}
+.ref__cards {
+  display: flex;
+  gap: 6px;
+}
+.start-bonus__bonuses {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  margin-bottom: 4px;
+  color: var(--main-orange-01);
+  gap: 8px;
+}
+.start-bonus__bonus {
+  display: flex;
+  align-items: center;
+}
+.start-bonus__title {
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+.invite-bonus__title {
+  margin-bottom: 8px;
+}
+.start-bonus__text, .invite-bonus__text {
+  font-size: 8px;
+  opacity: 0.6;
+}
+.invite-bonus__text {
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+.invite-bonus__income {
+  font-size: 10px;
+  color: var(--main-green-01);
+  transform: skew(4deg);
+}
+.start-bonus__amount {
+  margin-right: 4px;
+}
+.start-bonus__icon {
+  width: 19px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(66%) sepia(26%) saturate(2019%) hue-rotate(8deg) brightness(105%) contrast(94%);
+}
+.start-bonus__icon--ticket {
+  width: 16px;
+  height: 16px;
+}
+.flag-invite__back {
+  position: absolute;
+  z-index: -1;
+  right: -7px;
+  bottom: 78px;
+}
+.flag-invite__front {
+  position: absolute;
+  right: -9px;
+  z-index: 2;
+  bottom: 90px;
+}
+
+.invite__link {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 24px;
+}
+.input {
+  transform: skew(-8deg);
+  border: 2px solid var(--gray-01);
+  background: var(--black-01);
+  width: 269px;
+}
+.invite__input {
+  color: var(--white-01);
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 5px 30px;
+  font-family: 'Poppins', system-ui;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  border-radius: none;
+  transform: skew(8deg);
+}
+.invite__copy {
+  border: 2px solid var(--white-01);
+  padding: 5px 24px;
+  transform: skew(-8deg);
+}
+.friends__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.friends__users {
+  text-transform: lowercase;
+  margin-bottom: 12px;
+}
+.friend__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--white-20p);
+}
+.friend__leader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--white-20p);
+  padding: 4px 12px 1px;
+}
+.friend__leader--you {
+  background-color: var(--white-20p);
+  border-bottom: none;
+  padding: 8px 12px;
+}
+.friend__name--you {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.friend__icon--you {
+  width: 36px;
+  height: 36px;
+}
+
+.friend__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.friend__user-info,
+.friend__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.friends__position {
+  font-size: 14px;
+  color: var(--gray-01);
+}
+.friends__position--you {
+  color: var(--white-01);
+}
+.friends__position--first,
+.friend__name--first {
+  color: #ffcb27;
+}
+.friends__position--second,
+.friend__name--second {
+  color: #c9c8c6;
+}
+.friends__position--third,
+.friend__name--third {
+  color: #d27a27;
+}
+.friends-main__btn {
+  max-width: 365px;
+  color: var(--black-01);
+  background-color: var(--main-green-01);
+  box-shadow: 0 -16px 44px 0 rgba(49, 239, 49, 0.2);
+}
+
+.popup-friends--active .popup__overlay {
+  opacity: 1;
+  z-index: 2;
+}
+
+.popup-friends__card {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -500px;
+  padding: 0 12px;
+  z-index: 2;
+  transition: bottom 0.5s linear;
+}
+.popup-friends--active .popup-friends__card {
+  animation: popup-friends-card 0.8s linear;
+}
+@keyframes popup-friends-card {
+  0% {
+    bottom: -500px;
+  }
+  60% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+.popup-friends--active .popup-friends__card {
+  bottom: 30px;
+}
+.popup-friends__body {
+  border: 2px solid var(--white-01);
+  background-image: url(../img/bg/start-bonus-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 350px;
+  height: 268px;
+  padding: 50px 32px;
+  position: relative;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+.popup-friends__wrapper {
+  transform: skew(-4deg);
+}
+.friends__wrapper {
+  transform: skew(-4deg);
+  padding: 0 12px;
+}
+.popup-friends__btn {
+  background-color: var(--black-01);
+  color: var(--white-01);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.popup-friends__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  transform: skew(4deg);
+}
+.popup-friends__text {
+  margin: 0 auto;
+  font-size: 10px;
+  transform: skew(4deg);
+  max-width: 158px;
+}
+.popup-friends__text--green {
+  color: var(--main-green-01);
+}
+.popup-friends__text--orange {
+  color: var(--main-orange-01);
+}
+.gift-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.gift-boxes__count {
+  font-size: 48px;
+}
+
+.leader__img {
+  position: relative;
+  border: 2px solid var(--white-01);
+  /* transform: skew(-4deg); */
+  background-image: url(../img/bg/leader-bg.png);
+  max-width: 355px;
+  height: 170px;
+  margin: 20px auto 16px;
+}
+.leader-flag__back {
+  position: absolute;
+  z-index: -1;
+  left: -11px;
+  top: -4px;
+}
+.leader-flag__front {
+  position: absolute;
+  top: -12px;
+  left: -13px;
+  z-index: 2;
+}
+.leaderboard__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}

@@ -1,0 +1,352 @@
+.farming__body{
+  background-image: url('../img/bg/farming-bg.png');
+  background-position: 0 -110px;
+}
+.info{
+  display: flex;
+  margin-top: 42px;
+  margin-bottom: 30px;
+}
+
+.bonuses, .balance{
+  background-repeat: no-repeat;
+  height: 97px;
+  width: 179px;
+  position: relative;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4);
+  padding: 12px;
+}
+.bonuses{
+  background-image: url(../img/bg/bonus.png);
+  margin-right: 8px;
+}
+.bonuses__text{
+  margin-bottom: 2px;
+}
+.bonuses__amount{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 16px;
+}
+.amount-friends{
+  margin-bottom: 8px;
+}
+.amount-friends__icon{
+  width: 20px;
+  height: 20px;
+}
+.amount-tickets__icon{
+  width: 16px;
+  height: 16px;
+  margin-left: 3px;
+}
+.bonuses__status{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bonuses__status-text{
+  color: var(--gray-01);
+}
+.bonuses__status-text--green{
+  color: var(--main-green-01);
+}
+
+.balance{
+  background-color: var(--black-03);
+  border-radius: 4px;
+}
+.balance__amount{
+  position: relative;
+  font-size: 16px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+.balance__icon{
+  position: absolute;
+  left: 60px;
+  top: -20px;
+}
+
+.farm-balance{
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.farm-balance__text{
+  font-size: 9px;
+  color: var(--white-01);
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+.farm-balance__income{
+  color: var(--main-orange-01);
+}
+
+.flag-balance__front{
+  position: absolute;
+  left: -33px;
+  top: -40px;
+}
+
+.flag__back{
+  position: absolute;
+  z-index: -1;
+  left: -7px;
+  top: -12px;
+}
+.flag__front{
+  position: absolute;
+  left: -13px;
+  top: -40px;
+}
+
+.farm-card{
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 52px;
+}
+.farm-card__img{
+  box-shadow: 0 8px 44px 6px #373737;
+}
+.farm-card__wrapper{
+  transform: skew(-8deg);
+}
+.farm-card__info{
+  position: relative;
+  width: 179px;
+  height: 100px;
+  background-color: var(--black-03);
+  border: 2px solid var(--white-01);
+  padding: 12px;
+}
+.farm-card__name{
+  font-size: 16px;
+}
+.farm-card__lvl{
+  margin-bottom: 14px;
+}
+.farm-card__income{
+  color: var(--main-orange-01);
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  transform: skew(8deg);
+}
+.flag-farm__back{
+  position: absolute;
+  z-index: -1;
+  right: -10px;
+  top: 17px;
+}
+.flag-farm__front{
+  position: absolute;
+  top: 29px;
+  right: -12px;
+  z-index: 2;
+}
+.farm-card__buttons{
+  display: flex;
+  gap: 2px;
+  margin-top: 2px;
+}
+.farm-card__button{
+  height: 32px;
+  border: 2px solid var(--white-01);
+  color: var(--black-01);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bt__text{
+  transform: skew(8deg);
+}
+.farm-card__button--repair{
+  background-color: var(--main-green-01);
+  padding: 7px 10px;
+}
+.farm-card__button--food{
+  background-color: var(--main-red-01);
+  padding: 7px 16px;
+}
+.farm-card__icon{
+  transform: skew(8deg);
+  width: 18px;
+  height: 18px;
+}
+.farm-card__btn--medium{
+  border: 2px solid var(--white-01);
+  background-color: var(--black-01);
+  padding: 7px 62px;
+  transform: skew(-8deg);
+  margin-top: 2px;
+  margin-left: 8px;
+}
+.timer{
+  text-align: center;
+  font-size: 14px;
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+.farming__btn{
+  background-color: var(--main-orange-01);
+  margin-bottom: 8px;
+  color: var(--black-01);
+}
+.popup-farming--active .popup__overlay{
+  opacity: 1;
+  z-index: 2;
+}
+.popup-farming__img{
+  position: fixed;
+  z-index: 3;
+}
+.popup-farming__img--first{
+  top: -133px;
+  right: -133px;
+}
+.popup-farming-tape-1-animate-return{
+  animation: popup-farm-tape-1-return 0.5s linear forwards;
+}
+.popup-farming-tape-2-animate-return{
+  animation: popup-farm-tape-2-return 0.5s linear forwards;
+}
+.popup-farming__img--second{
+  bottom: -100px;
+  left: -100px;
+}
+.popup-farming--active .popup-farming__img--first{
+  animation: popup-farm-tape-1 1s linear forwards;
+}
+@keyframes popup-farm-tape-1 {
+  0%{
+    transform: translate(0, 0);
+  }
+  60%{
+    transform: translate(-133px, 100px);
+  }
+  100%{
+    transform: translate(-127px, 95px);
+  }
+}
+.popup-farming--active .popup-farming__img--second{
+  animation: popup-farm-tape-2 1s linear forwards;
+}
+@keyframes popup-farm-tape-2 {
+  0%{
+    transform: translate(0, 0);
+  }
+  60%{
+    transform: translate(100px, -100px);
+  }
+  100%{
+    transform: translate(95px, -95px);
+  }
+}
+
+@keyframes popup-farm-tape-1-return {
+  0% {
+    transform: translate(-127px, 95px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes popup-farm-tape-2-return {
+  0% {
+    transform: translate(95px, -95px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.popup-farming__card{
+  position: fixed;
+  bottom: -500px;
+  padding: 0 12px;
+  z-index: 2;
+  transition: bottom 0.5s linear;
+}
+.popup-farming--active .popup-farming__card{
+  animation: popup-farm-card 1s linear;
+}
+@keyframes popup-farm-card {
+  0%{
+    bottom: -500px;
+  }
+  60%{
+    bottom: 45px;
+  }
+  100%{
+    bottom: 40px;
+  }
+}
+.popup-farming--active .popup-farming__card{
+  bottom: 40px;
+}
+.popup-farming__body{
+  background-image: url(../img/bg/soon-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 366px;
+  height: 217px;
+  padding: 28px 32px 56px 33px;
+  position: relative;
+}
+.popup-farming__btn{
+  background-color: var(--black-01);
+  color: var(--white-01);
+  font-size: 16px;
+  position: relative;
+  top: -12px;
+}
+.popup-farming__title{
+  font-size: 20px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+.popup-farming__text{
+  font-size: 10px;
+  opacity: 0.89;
+  margin-bottom: 16px;
+}
+.popup-farming__subtext{
+  font-size: 10px;
+  text-align: right;
+}
+.popup-flag__back{
+  position: absolute;
+  z-index: -1;
+  left: 4px;
+  top: -12px;
+}
+.popup-flag__front{
+  position: absolute;
+  top: -40px;
+  left: -22px;
+  z-index: 2;
+}
+.menu__item--purple{
+  color: var(--main-purple-01);
+  text-shadow: 0 0 6px rgba(122, 108, 243, 0.6);
+}
+.menu__icon--purple{
+  filter: drop-shadow(0 0 6px rgba(122, 108, 243, 0.4));
+}
+@media(max-width: 382px){
+  .farm-card__info{
+    width: 154px;
+  }
+  .farm-card__btn--medium{
+    padding: 7px 51px;
+  }
+  .farm-card__button--repair{
+    padding: 7px 6px;
+  }
+  .farm-card__button--food{
+    padding: 7px 8px;
+  }
+}
