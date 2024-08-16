@@ -2,6 +2,9 @@
   transform: skew(-4deg);
   margin-bottom: 37px;
 }
+.section__buttons--earn{
+  text-align: center;
+}
 .earn__main {
   max-width: 349px;
   height: 248px;
@@ -30,7 +33,9 @@
 .tasks-speed {
   margin-bottom: 16px;
 }
-
+.today{
+  margin-bottom: 40px;
+}
 .task {
   position: relative;
   display: flex;

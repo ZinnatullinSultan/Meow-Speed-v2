@@ -2,19 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const dailyButton = document.querySelector('.section-earn__btn--daily');
   const speedButton = document.querySelector('.section-earn__btn--speed');
-  const tasksDaily = document.querySelector('.tasks-daily');
-  const tasksSpeed = document.querySelector('.tasks-speed');
 
   // Функция для переключения секций
   function showSection(sectionToShow) {
     if (sectionToShow === 'daily') {
-      tasksDaily.classList.remove('hidden');
-      tasksSpeed.classList.add('hidden');
       dailyButton.classList.add('section__btn--active');
       speedButton.classList.remove('section__btn--active');
     } else if (sectionToShow === 'speed') {
-      tasksDaily.classList.add('hidden');
-      tasksSpeed.classList.remove('hidden');
       dailyButton.classList.remove('section__btn--active');
       speedButton.classList.add('section__btn--active');
     }

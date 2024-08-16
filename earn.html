@@ -34,15 +34,15 @@
 
     <main class="main">
       <div class="earn">
-        <div class="earn__main">
+        <div class="earn__main ">
           <h2 class="earn__title">Earn more</h2>
-          <img src="img/earn-img.png" alt="" class="earn__img" />
+          <img src="img/earn-img.png" alt="" class="earn__img" id="daily"/>
         </div>
-        <div class="section__buttons">
-          <button class="section__btn section__btn--active section-earn__btn--daily">
+        <div class="section__buttons section__buttons--earn">
+          <a class="section__btn section__btn--active section-earn__btn--daily" href="#daily">
             Daily
-          </button>
-          <button class="section__btn section-earn__btn--speed">Meow speed</button>
+          </a>
+          <a class="section__btn section-earn__btn--speed" href="#speed">Meow speed</a>
         </div>
       </div>
       <section class="tasks-daily">
@@ -128,7 +128,7 @@
         </div>
       </section>
 
-      <section class="tasks-speed">
+      <section class="tasks-speed" id="speed">
         <div class="tasks-speed__special meow">
           <div class="task task--meow">
             <img class="flag-earn__back" src="img/flags/flag-back.svg" alt="" />
