@@ -33,6 +33,7 @@ body {
   font-size: 14px;
   background-color: var(--black-01);
   text-transform: uppercase;
+  max-width: 400px;
 }
 h1,
 h2,
